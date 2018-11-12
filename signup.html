@@ -3,8 +3,58 @@
   <head>
     <meta charset="utf-8">
     <title>Sign Up</title>
+    <link rel="stylesheet" href="css.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   </head>
   <body>
-    <h1>Working</h1>
+
+    <!--Code for Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">Welcome</a>
+
+      <!-- Allows for the navbar to toggle when page is made shorter -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="signup.html">Sign In</a>
+        </div>
+      </div>
+    </nav>
+
+    <!--Code for Jumbotron-->
+    <div class="container">
+      <div class="jumbotron jumbotron-fluid" id="jumbo">
+        <div class="container">
+          <h1 id="jumbotitle" class="display-4">Log In!</h1>
+          <p id="sub">Enter your email and password!</p>
+        </div>
+      </div>
+    </div>
+
+    <!--Code for Log-in Form-->
+    <div class="container">
+    <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1"><strong>Email:</strong></label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1"><strong>Password:</strong></label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Keep me logged in</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+
   </body>
 </html>
